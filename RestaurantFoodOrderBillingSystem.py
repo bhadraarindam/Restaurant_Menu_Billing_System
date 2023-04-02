@@ -25,6 +25,8 @@ class RestaurantFoodOrderBillingSystem:
         self.item_types.append(self.itemNo)
 
     def add_item(self):
+        prin()
+        prin()
         self.list = list(self.items.keys())
         print("MENU")
         i = 1
@@ -35,6 +37,8 @@ class RestaurantFoodOrderBillingSystem:
         self.item_types.append(self.itemNo)
 
     def admin_add_product(self):
+        print()
+        print()
         while True:
             uname = input("Username : ")
             pswd = input("Password : ")
@@ -48,6 +52,8 @@ class RestaurantFoodOrderBillingSystem:
                 print("Wrong username or password")
 
     def calculate_price(self):
+        print()
+        print()
 
         for x in self.item_types:
             self.food_price += self.items[self.list[x-1]]
